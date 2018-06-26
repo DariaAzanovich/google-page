@@ -41,7 +41,6 @@ a:hover {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  opacity: 0.87;
 }
 
 .star-button {
@@ -156,7 +155,7 @@ a:hover {
   border: none;
   cursor: pointer;
   background:none;
-  outline: 0;
+  outline: none;
   padding-right: 30px;
 }
 
@@ -186,7 +185,6 @@ a:hover {
   flex-wrap: wrap;
   z-index: 1000;
   background: #fff;
-  opacity: 1;
 }
 
 .apps-popup::before {
