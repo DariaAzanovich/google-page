@@ -27,7 +27,7 @@ a:hover {
   height: 42px;
   padding-left: 10px;
   border: none;
-  outline: 0;
+  outline: none;
 }
 
 .img_displayed {
