@@ -7,7 +7,6 @@ function showAppsPopup(event) {
 }
 
 document.onclick = function(event) {
-  console.log('on doc click');
   const popup = document.getElementById("popup");
   if (!popup.contains(event.target)) {
     popup.className = "popup closed-popup";
