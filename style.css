@@ -186,6 +186,7 @@ a:hover {
   flex-wrap: wrap;
   z-index: 1000;
   background: #fff;
+  opacity: 1;
 }
 
 .apps-popup::before {
