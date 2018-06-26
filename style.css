@@ -1,14 +1,14 @@
 body {
-	background: white;
+  background: white;
   margin: 0;
   height: 100vh;
   font-family: sans-serif;
-	font-size: 13px;
+  font-size: 13px;
 }
 
 a {
-	color: black;
-	text-decoration: none;
+  color: black;
+  text-decoration: none;
 }
 
 a:hover {
@@ -16,10 +16,10 @@ a:hover {
 }
 
 .main {
-	margin-top: 90px;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
+  margin-top: 90px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .input {
@@ -38,16 +38,16 @@ a:hover {
 }
 
 .header-buttons {
-	display: flex;
-	justify-content: flex-end;
+  display: flex;
+  justify-content: flex-end;
   align-items: center;
-	opacity: 0.87;
+  opacity: 0.87;
 }
 
 .star-button {
-		outline: none;
-		border: none; 
-		background: #fff;
+  outline: none;
+  border: none; 
+  background: #fff;
 }
 
 .apps-icon {
@@ -61,10 +61,10 @@ a:hover {
 }
 
 .google-enter {
-	background: #4169E1;
-	color: white;
-	cursor: pointer;
-	border: none;
+  background: #4169E1;
+  color: white;
+  cursor: pointer;
+  border: none;
   text-align: center;
   vertical-align: middle;
   padding: 5px 10px;
@@ -72,17 +72,17 @@ a:hover {
 }
 
 .search-buttons, .google-form {
-	display: flex;
-	align-items: center;
-	justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .google-form {
-	position: relative;
-	width: 35em;
-	margin: auto;
-	display: flex;
-	flex-direction: column;
+  position: relative;
+  width: 35em;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
 }
 
 .search-buttons {
@@ -103,7 +103,7 @@ a:hover {
 }
 .search-button:hover {
 	border: 1px solid #c6c6c6;
-  cursor: pointer;
+ 	cursor: pointer;
 	box-shadow: 0 1px 1px rgba(0,0,0,0.1);
 	color: #222;
 	background-color: #f8f8f8;
@@ -131,7 +131,6 @@ a:hover {
 	padding-left: 21px;
 	border-top: 1px solid #A9A9A9;
 	border-bottom: 1px solid #A9A9A9;
-
 }
 
 .footer {
@@ -158,7 +157,7 @@ a:hover {
   cursor: pointer;
   background:none;
   outline: 0;
-	padding-right: 30px;
+  padding-right: 30px;
 }
 
 .popup {
@@ -185,8 +184,8 @@ a:hover {
   flex-direction: row;
   justify-content: space-around;
   flex-wrap: wrap;
-	z-index: 15;
-	background: #fff;
+  z-index: 1000;
+  background: #fff;
 }
 
 .apps-popup::before {
