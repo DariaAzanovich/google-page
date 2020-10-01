@@ -1,145 +1,149 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8">  
-		<title>Google</title>
+  <head>
+    <meta charset="utf-8">  
+    <title>Google</title>
     <meta name="keywords" content="google, поисковые системы, гугл"/>
-		<meta name="description" content="поиск гугл"/>
-		<link href="style.css" rel="stylesheet"/> 
-		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous"/>
-		<link rel="icon" href="images/favicon_3.ico" type="image/x-icon">
-	</head>
+    <meta name="description" content="поиск гугл"/>
+    <link href="style.css" rel="stylesheet"/> 
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous"/>
+    <link rel="icon" href="images/favicon_3.ico" type="image/x-icon">
+  </head>
 
-	<body>
+  <body>
+    <header class="header-buttons" >
+      <a href="https://www.google.com/intl/ru/gmail/about/" class="link">
+        Почта
+      </a>
+      <a href="https://www.google.by/imghp" class="link">
+        Картинки
+      </a>
+      <button class="star-button" onclick="showAppsPopup(event);">
+        <a class="apps-icon link">
+          <i class="fas fa-star"></i>
+        </a>
+      </button>
+      <div class="popup closed-popup"  id="popup">
+        <div class="apps-popup link">
+        <a href="https://myaccount.google.com/?utm_source=OGB&utm_medium=app">
+          <div class="popup-image__wrapper"><img src="images/account.png" class="popup-image"/>
+            <span class="popup-text">Мой аккаунт</span>
+          </div>
+        </a>
+        <a href="https://www.google.com/">
+          <div class="popup-image__wrapper"><img src="images/google-icon.png" class="popup-image"/>
+            <span class="popup-text">Поиск</span>
+          </div>
+        </a>
+        <a href="https://www.google.by/maps">
+          <div class="popup-image__wrapper"><img src="images/Google-Maps.png" class="popup-image"/>
+            <span class="popup-text">Карты</span>
+          </div>
+        </a>
+        <a href="https://www.youtube.com">
+          <div class="popup-image__wrapper"><img src="images/youTube.png" class="popup-image"/>
+            <span class="popup-text">You Tube</span>
+          </div>
+        </a>
+        <a href="https://play.google.com/store">
+          <div class="popup-image__wrapper"><img src="images/playMarket.png" class="popup-image"/>
+            <span class="popup-text">Play</span>
+          </div>
+        </a>
+        <a href="https://mail.google.com">
+          <div class="popup-image__wrapper"><img src="images/gmail.png" class="popup-image"/>
+            <span class="popup-text">Почта</span>
+          </div>
+        </a>
+        <a href="https://contacts.google.com/">
+          <div class="popup-image__wrapper"><img src="images/contacts.png" class="popup-image"/>
+            <span class="popup-text">Контакты</span>
+          </div>
+        </a>
+        <a href="https://drive.google.com/">
+          <div class="popup-image__wrapper"><img src="images/Google-Drive-icon.png" class="popup-image"/>
+            <span class="popup-text">Диск</span>
+          </div>
+        </a>
+        <a href="https://calendar.google.com">
+          <div class="popup-image__wrapper"><img src="images/google-calendar.png" class="popup-image"/>
+            <span class="popup-text">Календарь</span>
+          </div>
+        </a>
+        <a href="https://plus.google.com">
+          <div class="popup-image__wrapper"><img src="images/Google+_icon.png" class="popup-image"/>
+            <span class="popup-text">Google +</span>
+          </div>
+        </a>
+        <a href="https://translate.google.by">
+          <div class="popup-image__wrapper"><img src="images/Google_Translate.png" class="popup-image"/>
+            <span class="popup-text">Переводчик</span>
+          </div>
+        </a>
+        <a href="https://photos.google.com">
+          <div class="popup-image__wrapper"><img src="images/Google_Photos.png" class="popup-image"/>
+            <span class="popup-text">Фото</span>
+          </div>
+        </a>
+        </div>
+      </div>
+      <a href="https://accounts.google.com/ServiceLogin" class="google-enter link">
+        Войти
+      </a>
+    </header>
 
-		<header class="header-buttons" >
-			<a href="https://www.google.com/intl/ru/gmail/about/" class="link">
-				Почта
-			</a>
-			<a href="https://www.google.by/imghp" class="link">
-				Картинки
-			</a>
-			<button class="star-button" onclick="showAppsPopup(event);">
-				<a class="apps-icon link">
-					<i class="fas fa-star"></i>
-				</a>
-			</button>
-			<div class="popup closed-popup"  id="popup">
-				<div class="apps-popup link">
-					<a href="https://myaccount.google.com/?utm_source=OGB&utm_medium=app">
-						 <div class="popup-image__wrapper"><img src="images/account.png" class="popup-image"/>
-							 <span class="popup-text">Мой аккаунт</span>
-						 </div>
-					</a>
-					<a href="https://www.google.com/">
-						<div class="popup-image__wrapper"><img src="images/google-icon.png" class="popup-image"/>
-							<span class="popup-text">Поиск</span>
-						</div>
-					</a>
-					<a href="https://www.google.by/maps">
-						<div class="popup-image__wrapper"><img src="images/Google-Maps.png" class="popup-image"/>
-							<span class="popup-text">Карты</span>
-						</div>
-					</a>
-					<a href="https://www.youtube.com">
-							<div class="popup-image__wrapper"><img src="images/youTube.png" class="popup-image"/>
-								<span class="popup-text">You Tube</span>
-							</div>
-					</a>
-					<a href="https://play.google.com/store">
-						<div class="popup-image__wrapper"><img src="images/playMarket.png" class="popup-image"/>
-							<span class="popup-text">Play</span>
-						</div>
-					</a>
-					<a href="https://mail.google.com">
-						<div class="popup-image__wrapper"><img src="images/gmail.png" class="popup-image"/>
-							<span class="popup-text">Почта</span>
-						</div>
-					</a>
-					<a href="https://contacts.google.com/">
-						<div class="popup-image__wrapper"><img src="images/contacts.png" class="popup-image"/>
-							<span class="popup-text">Контакты</span>
-						</div>
-					</a>
-					<a href="https://drive.google.com/">
-						<div class="popup-image__wrapper"><img src="images/Google-Drive-icon.png" class="popup-image"/>
-							<span class="popup-text">Диск</span>
-						</div>
-					</a>
-					<a href="https://calendar.google.com">
-						<div class="popup-image__wrapper"><img src="images/google-calendar.png" class="popup-image"/>
-							<span class="popup-text">Календарь</span>
-						</div>
-					</a>
-					<a href="https://plus.google.com">
-						<div class="popup-image__wrapper"><img src="images/Google+_icon.png" class="popup-image"/>
-							<span class="popup-text">Google +</span>
-						</div>
-					</a>
-					<a href="https://translate.google.by">
-						<div class="popup-image__wrapper"><img src="images/Google_Translate.png" class="popup-image"/>
-							<span class="popup-text">Переводчик</span>
-						</div>
-					</a>
-					<a href="https://photos.google.com">
-						<div class="popup-image__wrapper"><img src="images/Google_Photos.png" class="popup-image"/>
-							<span class="popup-text">Фото</span>
-						</div>
-					</a>
-				</div>
-			</div>
-			<a href="https://accounts.google.com/ServiceLogin" class="google-enter link">
-				Войти
-			</a>
-		</header>
-
-		<main class="main">
-			<div class="img_displayed">
+    <main class="main">
+      <div class="img_displayed">
         <a href="https://www.google.com/doodles#archive">
-					<img src="images/google-sport.gif" alt="Football Balls">
-				</a>
-			</div>
-			<div>
-				<form action="https://www.google.by/search" method="get" class="google-form">
-					<div class="search-line">
-						<input name="q" type="text" class="input" />
-						<button type="button" class="button-keyboard"/>
-							<img src="http://www.gstatic.com/inputtools/images/tia.png"/>
-						</button>
-					</div>
-					<div class="search-buttons">
-						<button type="submit" class="search-button link">
-							Поиск в Google
-						</button>
-						<a href="https://www.google.com/doodles/">
-							<button type="button" class="search-button link">
-								Мне повезёт!
-							</button>
-						</a>
-					</div>
-				</form>
-			</div>
-		</main>
-		
-		<footer class="country-footer">
-			<section class="country-line">
-					<span>Беларусь</span>
-			</section>
-			<section class="footer">
-				<div>
-					<a href="https://adwords.google.com/intl/ru_by/home/" class="link">Реклама</a>
-					<a href="https://www.google.com/services/" class="link">Для бизнеса</a>
-					<a href="https://www.google.com/intl/ru_by/about/" class="link">Всё о Google</a>
-				</div>
-				<div>
-					<a href="https://policies.google.com/privacy" class="link">Конфиденциальность</a>
-					<a href="https://policies.google.com/terms" class="link">Условия</a>
-					<a href="https://www.google.com/preferences" class="link">Настройки</a>
-				</div>
-			</section>
-		</footer>
-	
-		<script src="google.js"></script>
+          <img src="images/google-sport.gif" alt="Football Balls">
+        </a>
+      </div>
+      <div>
+        <form action="https://www.google.by/search" method="get" class="google-form">
+          <div class="search-line">
+            <input name="q" type="text" class="input" />
 
-	</body>
+            <button type="button" class="button-keyboard">
+              <img src="http://www.gstatic.com/inputtools/images/tia.png"/>
+            </button>
+          </div>
+
+          <div class="search-buttons">
+            <button type="submit" class="search-button link">
+              Поиск в Google
+            </button>
+
+            <a href="https://www.google.com/doodles/">
+              <button type="button" class="search-button link">
+                Мне повезёт!
+              </button>
+            </a>
+          </div>
+        </form>
+      </div>
+    </main>
+
+    <footer class="country-footer">
+      <section class="country-line">
+        <span>Беларусь</span>
+      </section>
+
+      <section class="footer">
+        <div>
+          <a href="https://adwords.google.com/intl/ru_by/home/" class="link">Реклама</a>
+          <a href="https://www.google.com/services/" class="link">Для бизнеса</a>
+          <a href="https://www.google.com/intl/ru_by/about/" class="link">Всё о Google</a>
+        </div>
+
+        <div>
+          <a href="https://policies.google.com/privacy" class="link">Конфиденциальность</a>
+          <a href="https://policies.google.com/terms" class="link">Условия</a>
+          <a href="https://www.google.com/preferences" class="link">Настройки</a>
+        </div>
+      </section>
+    </footer>
+
+    <script src="google.js"></script>
+
+  </body>
 </html>
